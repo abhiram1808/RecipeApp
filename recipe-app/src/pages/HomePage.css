@@ -1,0 +1,116 @@
+/* HomePage.css */
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container styling */
+.container {
+  max-width: 1200px;
+}
+
+/* Search Bar Section */
+.search-bar-section {
+  background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 100%);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Inputs and Select */
+.search-bar-section input,
+.search-bar-section select {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.search-bar-section input:focus,
+.search-bar-section select:focus {
+  box-shadow: 0 0 0 2px rgba(255, 105, 135, 0.4);
+}
+
+/* Recipe Grid */
+.row {
+  margin: 0 -12px;
+}
+
+.col {
+  padding: 0 12px;
+}
+
+/* Recipe Card Styling */
+.recipe-card {
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.recipe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Wishlist Heart Icon */
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.3rem;
+  color: #ff3e6c;
+  background-color: white;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  color: #ff6b81;
+}
+
+/* Alert */
+.alert {
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Wishlist Modal */
+.modal-wishlist {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-bar-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar-section input,
+  .search-bar-section select {
+    width: 100%;
+  }
+
+  .wishlist-icon {
+    font-size: 1.1rem;
+  }
+}
